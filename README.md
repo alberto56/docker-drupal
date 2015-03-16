@@ -15,4 +15,14 @@ Each branch should contain information in its README file:
 This branch: 7.x-dev-2.x
 -----
 
-This is the recommended branch for Drupal 7 module development. It is a fork of [ricardoamaro's docker-drupal project](https://github.com/ricardoamaro/docker-drupal), with a few modifications for testing, described in our [issue queue](https://github.com/alberto56/docker-drupal/issues).
+This is the recommended branch for Drupal 7 module development. It is a fork of [ricardoamaro's docker-drupal project](https://github.com/ricardoamaro/docker-drupal), with a few modifications for testing.
+
+Version history
+-----
+
+7.x-dev-2.0: branched off b7alt, added some error displaying, a library for enabling simpletest, and coder review.
+
+Example usage
+-----
+
+See the Dockerfiles and scripts in [Realistic Dummy Content](http://drupal.org/project/realistic_dummy_content).
