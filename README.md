@@ -4,7 +4,7 @@ A Drupal Docker image for testing and development
 Which branch to use?
 -----
 
-Currently supported branches currently are:
+Currently supported branches are:
 
  * [6.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/6.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/6.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/6.x-dev-1.x)
  * [7.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-1.x)
