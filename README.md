@@ -1,18 +1,17 @@
-A simple Drupal Docker image for testing
+A Drupal Docker image for testing and development
 =====
 
 Which branch to use?
 -----
 
-Branch naming comprises three parts: the Drupal version (6.x, 7.x, ...); the proposed usage (dev = module development, the only one for now); and the version of this Dockerfile (1.x, 2.x, ...).
+Currently supported branches currently are:
 
-Each branch should contain information in its README file:
-
+ * [6.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/6.x-dev-1.x)
  * [7.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-1.x)
  * [7.x-dev-2.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-2.x)
- * _This branch_: [6.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/6.x-dev-1.x) is experimental.
+ * [8.0.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/8.0.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/8.0.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/8.0.x-dev-1.x)
 
-This branch: 6.x-dev-1.x
+Example usage
 -----
 
-This branch is designed for developing Drupal 6 sites, and is experimental.
+See the Dockerfiles and scripts in [Realistic Dummy Content](http://drupal.org/project/realistic_dummy_content).
