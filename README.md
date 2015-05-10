@@ -6,9 +6,9 @@ Which branch to use?
 
 Currently supported branches currently are:
 
- * [6.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/6.x-dev-1.x)
- * [7.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-1.x)
- * [7.x-dev-2.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-2.x)
+ * [6.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/6.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/6.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/6.x-dev-1.x)
+ * [7.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-1.x)
+ * [7.x-dev-2.x](https://github.com/alberto56/docker-drupal/tree/7.x-dev-2.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-2.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/7.x-dev-2.x)
  * [8.0.x-dev-1.x](https://github.com/alberto56/docker-drupal/tree/8.0.x-dev-1.x) [![Circle CI](https://circleci.com/gh/alberto56/docker-drupal/tree/8.0.x-dev-1.x.svg?style=svg)](https://circleci.com/gh/alberto56/docker-drupal/tree/8.0.x-dev-1.x)
 
 Example usage
