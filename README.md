@@ -29,9 +29,35 @@ Tags are named by replacing the `x` in the Dockerfile version with a minor versi
  * `8.0.x-dev-1.0` to use the latest stable version of Drupal 8.0.x, whatever it is.
  * `8.0.x-dev-1.0-8.0.0-beta10` to use `8.0.0-beta10`.
 
-The tags are not guaranteed to keep up with the Drupal versions.
+The tags are not guaranteed to keep up with the Drupal versions. Fork this project or submit a pull request if you want a more recent tag.
 
 Example usage
 -----
 
 See the Dockerfiles and scripts in [Realistic Dummy Content](http://drupal.org/project/realistic_dummy_content).
+
+Developers
+-----
+
+I try to keep this project in sync with the `alberto56/docker-drupal` Docker repository. This means that if a tag exists here, you should be able to use it in your Dockerfile (see "Example usage", above), by typing, for example:
+
+    FROM alberto56/docker-drupal:7.x-dev-2.0
+
+If Docker cannot find that tag, pleas submit a bug report with your exact output. If you want to fork this repository and maintain your own Docker repository, here is an example of how to do so for a specific tag.
+
+Start by making sure you have an account on [Docker.com](https://www.docker.com); this will allow you to host your own repositories.
+
+Replace `8.0.x-dev-1.0-8.0.0-beta10`, `c384f6f44b8c`, `alberto56`, and `me@example.com` with whatever tag, image hash, username and email you are using:
+
+    $ git checkout 8.0.x-dev-1.0-8.0.0-beta10
+    ...
+    $ docker build .
+    ...
+    Successfully built c384f6f44b8c
+    $ docker tag c384f6f44b8c alberto56/docker-drupal:8.0.x-dev-1.0-8.0.0-beta10
+    $ docker push alberto56/docker-drupal
+    ...
+    Please login prior to push:
+    Username: alberto56
+    Password:
+    Email: me@example.com
