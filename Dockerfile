@@ -48,11 +48,11 @@ RUN cd /srv/drupal/www/ && drush -y site-install standard --account-name=admin -
 
 RUN cat /settings.php.append >> /srv/drupal/www/sites/default/settings.php
 
-RUN cd /srv/drupal/www/ && drush -y dl environment_indicator coder devel
+RUN cd /srv/drupal/www/ && drush -y dl coder devel
 RUN chown -R www-data:www-data /db
 RUN chmod -R 777 /db
 RUN apt-get install sqlite3
-RUN cd /srv/drupal/www/ && drush -y en environment_indicator simpletest devel views_ui
+RUN cd /srv/drupal/www/ && drush -y en simpletest devel views_ui
 
 #RUN ls -al /srv/drupal/www/sites/default/files
 #RUN chmod a-w /srv/drupal/www/sites/default/settings.php
