@@ -54,6 +54,9 @@ RUN chmod -R 777 /db
 RUN apt-get install sqlite3
 RUN cd /srv/drupal/www/ && drush -y en simpletest devel views_ui
 
+RUN cd /srv/drupal/www && wget http://getcomposer.org/composer.phar
+RUN cd /srv/drupal/www && php composer.phar install
+
 #RUN ls -al /srv/drupal/www/sites/default/files
 #RUN chmod a-w /srv/drupal/www/sites/default/settings.php
 
