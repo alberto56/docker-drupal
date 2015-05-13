@@ -33,7 +33,7 @@ ADD docker-resources/php-fpm.conf /php-fpm.conf
 ADD docker-resources/supervisord.conf /supervisord.conf
 ADD docker-resources/settings.php.append /settings.php.append
 
-RUN cd /tmp && drush dl drupal-8.0.x && mv /tmp/drupal*/* /srv/drupal/www/ && rm -rf /tmp/*
+RUN git clone --branch 8.0.x --depth 1 http://git.drupal.org/project/drupal.git /srv/drupal/www
 RUN cd /srv/drupal/www && cp ./sites/default/default.services.yml ./sites/default/services.yml
 RUN sed -i "s/<?php/<?php\nerror_reporting(E_ALL);\nini_set('display_errors', TRUE);\nini_set('display_startup_errors', TRUE);/g" /srv/drupal/www/index.php
 RUN chmod a+w /srv/drupal/www/sites/default && mkdir /srv/drupal/www/sites/default/files
