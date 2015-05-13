@@ -7,7 +7,7 @@ MAINTAINER alberto56, forked from http://www.github.com/b7alt/ by b7alt
 #RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 
 RUN apt-get update && apt-get upgrade -y
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y supervisor openssh-server nginx php5-fpm php5-sqlite php5-gd drush php-apc git emacs
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y supervisor openssh-server nginx php5-fpm php5-sqlite php5-gd drush php-apc git emacs sendmail
 # not working...RUN sed -i "s/^display_errors.*$/display_errors = On/" /etc/php5/cli/php.ini
 RUN apt-get -y install php5-curl
 RUN update-rc.d nginx disable
