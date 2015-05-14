@@ -56,6 +56,8 @@ RUN cd /srv/drupal/www/ && drush -y en simpletest devel views_ui
 
 RUN cd /srv/drupal/www && wget http://getcomposer.org/composer.phar
 RUN cd /srv/drupal/www && php composer.phar install
+RUN cd /srv/drupal/www && wget https://www.drupal.org/files/issues/2189345-67.patch
+RUN cd /srv/drupal/www && patch -p1 < 2189345-67.patch
 
 #RUN ls -al /srv/drupal/www/sites/default/files
 #RUN chmod a-w /srv/drupal/www/sites/default/settings.php
